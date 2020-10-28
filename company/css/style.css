@@ -1,0 +1,1443 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {
+    font-family: 'Oswald', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    overflow-x: hidden;
+}
+
+.ham {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+/* line 84, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.ham_line {
+    position: absolute;
+    background-color: #ffffff;
+    left: 20px;
+    width: 35px;
+    height: 1px;
+    transition: all 0.3s;
+}
+
+/* line 93, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.ham_line1 {
+    top: 25px;
+}
+
+/* line 97, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.ham_line2 {
+    top: 35px;
+}
+
+/* line 101, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.ham_line3 {
+    top: 45px;
+}
+
+/* line 105, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.clicked .ham_line1 {
+    transform: rotate(45deg);
+    top: 35px;
+}
+
+/* line 110, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.clicked .ham_line2 {
+    width: 0px;
+}
+
+/* line 114, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.clicked .ham_line3 {
+    transform: rotate(-45deg);
+    top: 35px;
+}
+
+/* line 119, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: -100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s;
+    z-index: 10003;
+    text-align: center;
+}
+
+/* line 130, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.clicked .menu {
+    top: 70px;
+    padding-top: 80px;
+}
+
+/* line 70, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+.menu ul {
+    list-style-type: none;
+    max-width: 90%;
+    margin: auto;
+    padding: 0;
+}
+
+/* line 77, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+.menu ul li {
+    height: 120px;
+    padding-left: 0px;
+    border-top: solid 1px #ffffff;
+}
+
+/* line 83, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+.menu ul li:nth-child(6) {
+    border-bottom: solid 1px #ffffff;
+}
+
+/* line 87, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    line-height: 120px;
+}
+
+/* line 96, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+.menu ul li a:hover {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.9);
+    transition: all 0.5s;
+}
+
+/* line 107, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+header .header--wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10004;
+}
+
+/* line 118, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+header .header--wrapper h1 {
+    padding-left: 20px;
+}
+
+/* line 121, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+header .header--wrapper h1 img {
+    max-width: 250px;
+    width: 100%;
+    margin: 0;
+}
+
+.meassge--inbox__font__size {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    line-height: 32px;
+}
+
+.meassge--p__font {
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+.firstview {
+    background-image: url(../images/earth_pc.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    transition: all;
+}
+
+/* line 211, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+
+.fv__title {
+    padding-top: 220px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.fv__subtitle {
+    font-size: 14px;
+    letter-spacing: 0.075em;
+    margin-bottom: 20px;
+
+}
+
+.fv__maintitle {
+    font-size: 50px;
+    letter-spacing: 0.15em;
+}
+
+
+
+.fv__main {
+    text-align: center;
+    margin: auto;
+    letter-spacing: 0.2em;
+}
+
+.fv__main .pc {
+    display: block;
+}
+
+.fv__main .sp {
+    display: none;
+}
+
+.fv__main .fv__main--head {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 55px;
+}
+
+.fv__main .fv__main--body {
+    margin: auto;
+    font-size: 14px;
+    width: 50%;
+    line-height: 2.28;
+}
+
+
+.newspc {
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    background-color: #1a47b8;
+    width: 40vw;
+    height: 192px;
+    -webkit-animation: fadeIn 3.5s ease 0s 1 normal;
+    animation: fadeIn 3.5s ease 0s 1 normal;
+    padding-top: 50px;
+    padding-left: 60px;
+}
+
+/* line 292, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.newspc .newshead__sub {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.075em;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    position: relative;
+}
+
+.newspc .newshead__sub::before {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 25px;
+    left: -40px;
+    top: 8px;
+
+}
+
+.newspc .newshead {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 0.15em;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.wrapper .misson {
+    background-image: url(../images/background-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 calc(50% - 50vw);
+    padding-bottom: 200px;
+}
+
+.wrapper .misson .misson--box {}
+
+.misson .misson--box .misson--inbox__text {
+    padding-top: 195px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.misson--box .misson--inbox__text .inbox--heading__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.5px;
+    letter-spacing: 0.075em;
+}
+
+.misson .misson--box .misson--inbox__heading {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.misson--box .misson--inbox__heading .sectiontitle {
+    font-size: 50px;
+    line-height: 71px;
+    font-weight: bold;
+    letter-spacing: 11px;
+}
+
+.wrapper .misson .misson--box__section {
+    max-width: 1033px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 70px;
+}
+
+.misson .misson--box__section .misson--inbox__section {
+    display: flex;
+    margin-top: 120px;
+}
+
+.misson .misson--box__section .misson--inbox__section:first-child {
+    margin-top: 0px;
+}
+
+.misson--box__section .misson--inbox__section .text--center {
+    max-width: 430px;
+    width: 100%;
+    text-align: center;
+}
+
+.misson--inbox__section .text--center p {
+    background-color: rgba(51, 51, 51, 1);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text--center p .white {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(249, 249, 249, 1);
+    letter-spacing: 0.15em;
+}
+
+.text--center p .font--size__white {
+    font-size: 30px;
+    color: rgba(239, 239, 239, 1);
+    font-weight: 600;
+    margin-left: 15px;
+    letter-spacing: 0.2em;
+}
+
+.misson--inbox__section__text {
+    margin-left: 50px;
+    width: 50%;
+}
+
+.misson--inbox__section__text .border--top .misson--border__font {
+    font-size: 30px;
+    letter-spacing: 0.15em;
+    line-height: 1;
+}
+
+.misson--inbox__section .misson--inbox__section__text .border--bottom {
+    padding-top: 15px;
+}
+
+.misson--inbox__section__text .border--bottom .border--bottom__font {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.2em;
+}
+
+.misson--inbox__section .misson--inbox__section__text .border--top {
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    padding-bottom: 10px;
+    margin-top: 5px;
+}
+
+.wrapper .value {
+    background-color: rgba(51, 51, 51, 1);
+    background-size: cover;
+    margin: 0 calc(50% - 50vw);
+    padding-bottom: 200px;
+}
+
+.value--box .value--box__heading .value--inbox__heading__text {
+    text-align: center;
+    padding-top: 195px;
+}
+
+.value--box__heading .value--inbox__heading__text .value--heading__text {
+    font-size: 14px;
+    line-height: 24.5px;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+}
+
+.value--inbox__heading__text p .value--heading__text {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+}
+
+.value--box .value--box__heading .value--inbox__heading {
+    text-align: center;
+}
+
+.value--box__heading .value--inbox__heading .sectiontitle_value {
+    font-size: 50px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    color: rgba(249, 249, 249, 1);
+    margin-top: 10px;
+}
+
+.value .value--box .value--inbox {
+    max-width: 1200px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.value--box .value--inbox .value--inbox__number {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    color: #333;
+}
+
+.value--inbox .value--inbox__number .text_inbox_category {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    margin: 0 10px;
+    margin-bottom: 15px;
+    padding: 32px 10px 32px 20px;
+    width: 48%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.value--inbox__number .text_inbox_category .value--text__number {
+    border-right: 1px solid #333333;
+    padding-right: 20px;
+    max-width: 400px;
+}
+
+.text_inbox_category .value--text__font .value--font__text {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+
+
+
+
+}
+
+.value--inbox__number .text_inbox_category .value--text__font {
+    padding-left: 30px;
+
+}
+
+
+.text_inbox_category .value--text__number .value--font__number {
+    font-size: 50px;
+    letter-spacing: 0.15em;
+    margin-left: 3px;
+}
+
+
+.wrapper .multiple {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 250px;
+}
+
+.multiple .multiple--box__heading .multiple__heading__text {
+    width: 150px;
+    position: relative;
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5px;
+    margin-left: -140px;
+}
+
+.multiple--heading__p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.multiple--box__heading .multiple__heading__text .multiple--heading__p:before,
+.multiple--heading__p:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: #666;
+}
+
+.multiple--box__heading .multiple__heading__text .multiple--heading__p:after {
+    left: 0;
+
+}
+
+.multiple--box__heading .multiple__heading__text .multiple--heading__p:before {
+    right: 0;
+    display: none;
+}
+
+.multiple .multiple--box__heading .heading__multiple {
+    margin-top: 10px;
+}
+
+.multiple--box__heading .heading__multiple .sectiontitle__multiple {
+    font-size: 50px;
+    line-height: 71px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+.wrapper .multiple .sectiontitle__text {
+    margin-top: 40px;
+}
+
+.multiple .sectiontitle__text .sectiontitle--text__bottom {
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+.wrapper .multiple .department--images {
+    margin-top: 100px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.multiple .department--images img {}
+
+
+.wrapper .meassge {
+    background-color: rgba(244, 244, 244, 1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 calc(50% - 50vw);
+    padding: 0 20px;
+    padding-bottom: 100px;
+
+}
+
+.wrapper .meassge .message--wrapper {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-top: 220px;
+}
+
+.message .message--wrapper .message--box {}
+
+.message--box .message--heading__text .message--heading__p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    line-height: 1;
+}
+
+.meddage--wrapper .message--box .heading__multiple {
+    margin-top: 15px;
+}
+
+.message--box .heading__multiple .sectiontitle__multiple {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+.message .message--wrapper .message--box__text {
+    margin-left: 365px;
+    margin-top: 90px;
+}
+
+.message--wrapper .message--box .heading__multiple {
+    margin-top: 20px;
+}
+
+.message--box__text .message--inbox__text__top .meassge--inbox__text__p {
+    margin-top: 40px;
+}
+
+
+.message--box__text .message--inbox__text__bottom .meassge--inbox__text__p {
+    margin-top: 40px;
+}
+
+.message--box__text .message--inbox__text__bottom .meassge--inbox__text {
+    margin-top: 30px;
+}
+
+.message--inbox__text__top .meassge--inbox__text__p .meassge--p__font {
+    line-height: 2.28;
+}
+
+.message--box .multiple--heading__text .multiple--heading__text {
+    position: relative;
+    display: inline-block;
+    padding: 0 45px;
+
+}
+
+.message--box .multiple--heading__text .multiple--heading__text:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: #666;
+}
+
+.message--box .multiple--heading__text .multiple--heading__text:before {
+    right: 0;
+    display: none;
+}
+
+.message--box .multiple--heading__text .multiple--heading__text:after {
+    left: 0;
+
+
+}
+
+.message--wrapper .message--box .heading__multiple {
+    margin-top: 15px;
+}
+
+.message--wrapper .message--box__text .message--inbox__text__bottom {
+    margin-top: 30px;
+}
+
+.meassge .message--wrapper .message--box__text {
+    margin-top: 70px;
+}
+
+.wrapper .company {
+    padding-top: 190px;
+}
+
+.company .compny--box__heading .company--inbox__heading__text {
+    position: relative;
+    display: inline-block;
+    padding: 0 45px;
+}
+
+.compny--box__heading .company--inbox__heading__text .company--border__left {
+    font-size: 14px;
+    line-height: 24.5px;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+}
+
+.compny--box__heading .heading__multiple .sectiontitle__multiple {
+    font-size: 50px;
+    letter-spacing: 0.15em;
+}
+
+.compny--box__heading .company--inbox__heading__text .company--border__left:before,
+.company--border__left:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: #666;
+}
+
+.compny--box__heading .company--inbox__heading__text .company--border__left:before {
+    right: 0;
+    display: none;
+}
+
+.compny--box__heading .company--inbox__heading__text .company--border__left:after {
+    left: 15px;
+    ;
+}
+
+.company .compny--box__heading .heading__multiple {
+    margin-top: 5px;
+}
+
+.message--box .heading__multiple .heading__multiple {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+.wrapper .company {
+    padding-bottom: 200px;
+}
+
+.wrapper .company .compny--box__heading {
+    max-width: 1230px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.information {
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.information--text {
+    max-width: 588px;
+    letter-spacing: 0.075em;
+    line-height: 60px;
+}
+
+.information--dt {
+    width: 30%;
+    padding-left: 28px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    float: left;
+}
+
+.information--dd {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    padding-left: 84px;
+}
+
+.google_map iframe {
+    width: 100%;
+    height: 363px;
+}
+
+.wrapper .company .information--dd:nth-child(12) {
+    border: none;
+}
+
+
+.wrapper .company .google_map {
+    max-width: 1230px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.wrapper .history {
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+}
+
+.wrapper .history .history--box__heading {
+    margin: 0 auto;
+}
+
+.history .history--box__heading .history--inbox__heading__text {
+    position: relative;
+    display: inline-block;
+    padding: 0 45px;
+}
+
+.history--box__heading .history--inbox__heading__text .history--text__p {
+    font-size: 14px;
+    line-height: 24.5px;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+}
+
+.history--text__p:before,
+.history--text__p:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: #666;
+}
+
+
+.history--text__p:before {
+    right: 0;
+    display: none;
+}
+
+.history--text__p:after {
+    left: 0;
+}
+
+.history .history--box__heading .heading__multiple {
+    margin-top: 5px;
+}
+
+.history--box__heading .heading__multiple .sectiontitle__multiple {
+    font-size: 50px;
+    letter-spacing: 0.15em;
+}
+
+article .wrapper footer {
+    margin: 0 calc(50% - 50vw);
+    padding: 0 40px;
+    background-color: #333;
+    height: 260px;
+    position: relative;
+}
+
+/* line 441, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+.wrapper .footer--box {
+    padding-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wrapper .copyright {
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    margin-bottom: 25px;
+}
+
+#wrapper ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 -20px;
+    padding-left: 0;
+}
+
+#wrapper li:nth-child(7) {
+    border-right: none;
+}
+
+/* line 449, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+article .wrapper footer .footer--box__logo img {
+    max-width: 250px;
+}
+
+/* line 456, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+.wrapper ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 -20px;
+    padding-left: 0;
+}
+
+/* line 462, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+article .wrapper footer li {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-right: solid 1px #ffffff;
+}
+
+/* line 470, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+article .wrapper footer li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* line 475, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+article .wrapper footer li p {
+    display: inline;
+}
+
+/* line 480, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+article .wrapper footer li:hover {
+    opacity: 0.6;
+}
+
+/* line 484, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+.wrapper li:nth-child(7) {
+    border-right: none;
+}
+
+/* line 488, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+article .wrapper footer .copyright {
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 25px;
+}
+
+/* line 497, /Users/allmarket-design/Desktop/下鳥/2020/product/css/style.scss */
+article .wrapper footer .copyright p {
+    text-align: right;
+}
+
+
+/*------------------------------------1023------------------------------------*/
+
+@media screen and (max-width: 1023px) {
+    .clicked .menu {
+        padding-top: 55px;
+    }
+
+    /* line 1191, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .menu ul {
+        width: 90%;
+    }
+
+    /* line 1195, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .menu ul li {
+        height: 60px;
+    }
+
+    /* line 1200, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .menu ul li a {
+        line-height: 60px;
+        font-size: 12px;
+    }
+
+    header .header--wrapper h1 img {
+        max-width: 150px;
+    }
+
+
+    .firstview {
+        background-image: none;
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-attachment: fixed;
+        height: 100vh;
+        position: relative;
+        transition: all;
+        margin-bottom: 100px;
+    }
+
+    /* line 211, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+
+    .fv__title {
+        padding-top: 100px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .fv__subtitle {
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        margin-bottom: 15px;
+
+    }
+
+    .fv__maintitle {
+        font-size: 30px;
+        letter-spacing: 0.15em;
+        margin-bottom: 42px;
+    }
+
+
+
+    .fv__main {
+        text-align: center;
+        margin: auto;
+        letter-spacing: 0.2em;
+    }
+
+    .fv__main .fv__main--head {
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        margin-bottom: 40px;
+    }
+
+    .fv__main--span {
+        margin-left: -15px;
+    }
+
+    .fv__main .pc {
+        display: none;
+    }
+
+    .fv__main .sp {
+        display: block;
+        line-height: 1.5;
+    }
+
+    .fv__main .fv__main--body {
+        margin: auto;
+        font-size: 12px;
+        width: 70%;
+        line-height: 2.08;
+        letter-spacing: 0.1em;
+        margin-bottom: 50px;
+    }
+
+    .fv__main img {
+        width: 50%;
+        margin: auto;
+    }
+
+
+    .newspc {
+        width: 95vw;
+        height: 120px;
+        padding-top: 30px;
+        padding-left: 30px;
+        margin-left: auto;
+        bottom: -150px;
+    }
+
+    /* line 292, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .newspc .newshead__sub {
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        margin-left: 23px;
+    }
+
+    .newspc .newshead__sub::before {
+        width: 12px;
+        left: -22px;
+        top: 6px;
+
+    }
+
+    .newspc .newshead {
+        font-size: 30px;
+    }
+
+    .wrapper {
+        max-width: 1023px;
+        margin-left: auto;
+        margin-left: auto;
+    }
+
+    .wrapper .misson {
+        padding-bottom: 100px;
+    }
+
+    .wrapper .misson .misson--box {
+        text-align: center;
+    }
+
+
+    .misson--inbox__text {
+        padding-top: 135px !important;
+    }
+
+    .misson--box .misson--inbox__text .inbox--heading__text {
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 12.25px;
+
+    }
+
+    .misson--inbox__heading {}
+
+    .misson--box .misson--inbox__heading .sectiontitle {
+        font-size: 30px;
+        line-height: 35.5px;
+        font-weight: 350;
+        letter-spacing: 5.5px;
+    }
+
+    .misson .misson--box__section .misson--inbox__section {
+        display: block;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .misson .misson--box__section .misson--inbox__section {}
+
+    .misson--box__section .misson--inbox__section .text--center {
+        max-width: 178px;
+        margin: 0 auto;
+    }
+
+    .misson--inbox__section .text--center p {}
+
+    .text--center p .font--size__white {
+        font-size: 13.5px;
+    }
+
+    .text--center p .white {
+        font-size: 13.5px;
+    }
+
+    .misson--inbox__section__text {
+        max-width: 1023px;
+        margin: 0 auto;
+        margin-top: 35px;
+        width: 80%;
+    }
+
+
+    .misson--inbox__section .text--center p {
+
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+        border-radius: 10px;
+
+    }
+
+    .misson--inbox__section__text .border--top .misson--border__font {
+        font-size: 19px;
+        letter-spacing: 0.15em;
+        font-weight: 350;
+
+    }
+
+    .misson--inbox__section__text {
+        max-width: 277.5px;
+    }
+
+    .misson--inbox__section__text .border--bottom .border--bottom__font {
+        font-size: 12px;
+        font-weight: 200;
+        letter-spacing: 0.1em;
+    }
+
+    .wrapper .value {
+        padding-bottom: 100px;
+
+    }
+
+    .value--box .value--box__heading .value--inbox__heading__text {
+        padding-top: 97.5px;
+    }
+
+    .value--box__heading .value--inbox__heading__text .value--heading__text {
+        font-size: 12px;
+        font-weight: 200;
+        letter-spacing: 0.15em;
+    }
+
+    .value--box__heading .value--inbox__heading .sectiontitle_value {
+        font-size: 30px;
+        font-weight: 350;
+        letter-spacing: 0.15em;
+        margin-top: 5px;
+    }
+
+    .value .value--box .value--inbox {
+        padding: 0 20px;
+    }
+
+    .value--box .value--inbox .value--inbox__number {
+        display: block;
+    }
+
+    .value--inbox__number .text_inbox_category .value--text__number {
+        background-color: #F4F4F4;
+        padding-right: 0px;
+        border-radius: 10px;
+        min-width: 35px;
+        height: 35px;
+    }
+
+    .text_inbox_category .value--text__number .value--font__number {
+        font-size: 20px;
+        font-weight: 350;
+        letter-spacing: 0.15em;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .value--inbox .value--inbox__number .text_inbox_category {
+        background: none;
+        max-height: 65px;
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 40px;
+        padding: 0;
+        width: auto;
+    }
+
+    .value--inbox__number .text_inbox_category .value--text__font {
+        padding-left: 15px;
+
+    }
+
+    .text_inbox_category .value--text__font .value--font__text {
+        font-size: 12px;
+        line-height: 2.08;
+        ;
+        font-weight: 200;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+
+    .multiple--box__heading .heading__multiple .sectiontitle__multiple {
+        font-size: 25px;
+        line-height: 35.5px;
+        font-weight: 350;
+    }
+
+    .wrapper .multiple {
+        max-width: 1023px;
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 125px;
+    }
+
+    .multiple--heading__p {
+        font-size: 12px;
+        font-weight: 200;
+        font-variant: 12.25px;
+        letter-spacing: 0.00375;
+    }
+
+    .wrapper .multiple .sectiontitle__text {
+        margin-top: 20px;
+        max-width: 325px;
+        margin: 0 auto;
+        text-align: left
+    }
+
+    .multiple .sectiontitle__text .sectiontitle--text__bottom {
+        font-size: 12px;
+        outline-width: 16px;
+        font-weight: 200;
+        letter-spacing: 0.1em;
+        margin-top: 10px;
+
+    }
+
+    .wrapper .multiple .department--images {
+        width: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .multiple .multiple--box__heading .multiple__heading__text {
+        margin-left: 60px;
+        padding-right: 55px;
+    }
+
+    .message--box .multiple--heading__text .multiple--heading__text:after {
+        max-width: 17.5px;
+    }
+
+    .wrapper .meassge .message--wrapper {
+        margin: 0 auto;
+        padding: 0 20px;
+        padding-top: 110px;
+
+    }
+
+    .message--box {
+        text-align: center;
+    }
+
+    .multiple--heading__text {
+        font-size: 12px;
+        font-weight: 200;
+        padding: 0 25px !important;
+    }
+
+    .multiple--box__heading .multiple__heading__text .multiple--heading__p:before,
+    .multiple--heading__p:after {
+        max-width: 17.5px;
+    }
+
+    .message--box .heading__multiple .heading__multiple {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .meassge--inbox__font__size {
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        line-height: 16px;
+    }
+
+    .meassge--p__font {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 200;
+        letter-spacing: 0.2em;
+    }
+
+    .wrapper .company {
+        padding-top: 95px;
+
+    }
+
+    .wrapper .company .compny--box__heading {}
+
+    .information--text {
+        max-width: 1023px;
+        margin: 0 auto;
+
+    }
+
+    .wrapper .history .history--box__heading {
+        text-align: center
+    }
+
+
+
+    .compny--box__heading .company--inbox__heading__text .company--border__left {
+        font-size: 12px;
+        line-height: 12.25px;
+        font-weight: 200;
+        letter-spacing: 0.00373em;
+    }
+
+    .compny--box__heading .heading__multiple .sectiontitle__multiple {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .company .compny--box__heading .company--inbox__heading__text {}
+
+    .compny--box__heading .company--inbox__heading__text .company--border__left:before,
+    .company--border__left:after {
+        max-width: 17.5px;
+    }
+
+    .wrapper .company .google_map {
+        margin-top: 45px;
+    }
+
+    .information {
+        max-width: 1023px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+    }
+
+    .information--text {}
+
+    .information--dt {
+        font-size: 11px;
+        padding-left: 14px;
+        font-weight: 200;
+    }
+
+    .information--dd {
+
+        font-size: 11px;
+        font-weight: 200;
+    }
+
+    .google_map iframe {
+        width: 100%;
+        height: 335px;
+    }
+
+    .wrapper .company {
+        padding-bottom: 100px;
+    }
+
+    .history--box__heading .history--inbox__heading__text .history--text__p {
+        font-size: 12px;
+        line-height: 12.25px;
+        font-weight: 200;
+        margin-left: -10px
+    }
+
+    .history--box__heading .heading__multiple .se4ctiontitle__multiple {
+        font-size: 25px;
+        font-weight: 350;
+        letter-spacing: 0.15em;
+    }
+
+    .history--text__p:before,
+    .history--text__p:after {
+        max-width: 17.5px;
+    }
+
+    .history--box__heading .heading__multiple .sectiontitle__multiple {
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    .wrapper .history {
+        max-width: 1023px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .wrapper footer {
+        height: 100px !important;
+    }
+
+    /* line 1595, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper footer .footer--box {
+        padding-top: 37px;
+    }
+
+    /* line 1598, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper footer .footer--box .footer--box__logo {
+        margin: auto;
+    }
+
+    /* line 1601, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper footer .footer--box .footer--box__logo img {
+        max-width: 150px;
+    }
+
+    /* line 1607, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper footer .footer--box__nav {
+        display: none;
+    }
+
+    /* line 1611, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper footer .copyright {
+        right: 0;
+        left: 0;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    /* line 1617, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper footer .copyright p {
+        font-size: 8px;
+        text-align: center !important;
+    }
+}
+}
+
+@media screen and (max-width: 600px) {
+
+    /* line 1628, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .container .modal--link {
+        max-width: 50%;
+    }
+
+    /* line 1633, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .shop--button {
+        max-width: 33.3%;
+    }
+}

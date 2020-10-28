@@ -1,0 +1,371 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Oswald',
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+    overflow-x: hidden;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    90% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    90% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*===========================ハンバーガーメニューここから===========================*/
+.ham {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.ham_line {
+    position: absolute;
+    background-color: #ffffff;
+    left: 20px;
+    width: 30px;
+    height: 1px;
+    transition: all 0.3s;
+}
+
+.ham_line1 {
+    top: 25px;
+}
+
+.ham_line2 {
+    top: 35px;
+}
+
+.ham_line3 {
+    top: 45px;
+}
+
+.clicked .ham_line1 {
+    transform: rotate(45deg);
+    top: 35px;
+}
+
+.clicked .ham_line2 {
+    width: 0px;
+}
+
+.clicked .ham_line3 {
+    transform: rotate(-45deg);
+    top: 35px;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: -100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s;
+    z-index: 10003;
+    text-align: center;
+}
+
+.clicked .menu {
+    top: 70px;
+    padding-top: 80px;
+}
+
+.menu ul {
+    list-style-type: none;
+    max-width: 90%;
+    margin: auto;
+    padding: 0;
+}
+
+.menu ul li {
+    height: 120px;
+    padding-left: 0px;
+    border-top: solid 1px #ffffff;
+}
+
+.menu ul li:nth-child(6) {
+    border-bottom: solid 1px #ffffff;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    line-height: 120px;
+}
+
+.menu ul li a:hover {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.9);
+    transition: all 0.5s;
+}
+
+/*===========================ハンバーガーメニューここまで===========================*/
+header {
+
+
+    .header--wrapper {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        height: 70px;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10004;
+
+        h1 {
+            padding-left: 20px;
+
+            img {
+                max-width: 250px;
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+.wrapper {
+    margin: auto;
+    max-width: 1200px;
+    padding: 270px 20px 0 20px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 2.14;
+
+    section {
+        max-width: 590px;
+        margin-bottom: 200px;
+
+        p.title {
+            font-size: 30px;
+            margin-bottom: 80px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+
+            li {}
+
+            li.under {
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                border-bottom: solid 1px #ccc;
+            }
+
+            li.none__under {
+                margin-bottom: 80px;
+
+                ul.in__list {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin: 0 calc(50% - 50vw);
+        padding: 0 40px;
+        background-color: #333;
+        height: 260px;
+        position: relative;
+
+        .footer--box {
+            padding-top: 40px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .footer--box__logo {
+            img {
+                max-width: 250px;
+            }
+        }
+
+        .footer--box__nav {}
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0 -20px;
+            padding-left: 0;
+        }
+
+        li {
+            padding: 0 20px;
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            border-right: solid 1px #ffffff;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            p {
+                display: inline;
+            }
+        }
+
+        li:hover {
+            opacity: 0.6;
+        }
+
+        li:nth-child(7) {
+            border-right: none;
+        }
+
+        .copyright {
+            color: #fff;
+            font-size: 11px;
+            letter-spacing: 0.05em;
+            position: absolute;
+            right: 40px;
+            bottom: 0;
+            margin-bottom: 25px;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+/*-----------------------------ここから1023以下-----------------------------*/
+
+
+@media screen and (max-width:1023px) {
+    .clicked .menu {
+        padding-top: 55px;
+    }
+
+    .menu ul {
+        width: 90%;
+    }
+
+    .menu ul li {
+        height: 60px;
+    }
+
+
+    .menu ul li a {
+        line-height: 60px;
+        font-size: 12px;
+    }
+
+    header {
+        .header--wrapper {
+            h1 {
+                img {
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+
+    .wrapper {
+        margin: auto;
+        max-width: 1200px;
+        padding: 0 20px 0 20px;
+
+        section {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+
+        footer {
+            height: 120px;
+
+            .footer--box {
+                padding-top: 37px;
+                justify-content: center;
+
+                .footer--box__logo {
+                    margin: auto;
+
+                    img {
+                        max-width: 150px;
+                    }
+                }
+            }
+
+            .footer--box__nav {
+                ul {
+                    margin: 0 -20px;
+                    font-size: 11px;
+
+                    li:nth-child(-n+5) {
+                        display: none;
+                    }
+                }
+            }
+
+            .copyright {
+                right: 0;
+                left: 0;
+                margin: auto;
+                margin-bottom: 20px;
+
+                p {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .wrapper {
+        .container {}
+    }
+}

@@ -1,0 +1,1258 @@
+@charset "UTF-8";
+/* line 3, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+body {
+  font-family: 'Oswald', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  overflow-x: hidden; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* line 43, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.start {
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10005; }
+
+/* line 53, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.start p {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999; }
+  /* line 61, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .start p img {
+    width: 280px; }
+
+/* line 70, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+a {
+  text-decoration: none; }
+
+/* line 75, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*===========================ハンバーガーメニューここから===========================*/
+/* line 81, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.ham {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  cursor: pointer; }
+
+/* line 88, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.ham_line {
+  position: absolute;
+  background-color: #ffffff;
+  left: 20px;
+  width: 30px;
+  height: 1px;
+  transition: all 0.3s; }
+
+/* line 97, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.ham_line1 {
+  top: 25px; }
+
+/* line 101, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.ham_line2 {
+  top: 35px; }
+
+/* line 105, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.ham_line3 {
+  top: 45px; }
+
+/* line 109, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.clicked .ham_line1 {
+  transform: rotate(45deg);
+  top: 35px; }
+
+/* line 114, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.clicked .ham_line2 {
+  width: 0px; }
+
+/* line 118, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.clicked .ham_line3 {
+  transform: rotate(-45deg);
+  top: 35px; }
+
+/* line 123, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: -100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.2s;
+  z-index: 10003;
+  text-align: center; }
+
+/* line 134, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.clicked .menu {
+  top: 70px;
+  padding-top: 80px; }
+
+/* line 139, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.menu ul {
+  list-style-type: none;
+  max-width: 90%;
+  margin: auto;
+  padding: 0; }
+
+/* line 146, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.menu ul li {
+  height: 120px;
+  padding-left: 0px;
+  border-top: solid 1px #ffffff; }
+
+/* line 152, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.menu ul li:nth-child(6) {
+  border-bottom: solid 1px #ffffff; }
+
+/* line 156, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  line-height: 120px; }
+
+/* line 165, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.menu ul li a:hover {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.9);
+  transition: all 0.5s; }
+
+/*===========================ハンバーガーメニューここまで===========================*/
+/* line 175, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+header .header--wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10004; }
+  /* line 186, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  header .header--wrapper h1 {
+    padding-left: 20px; }
+    /* line 189, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    header .header--wrapper h1 img {
+      max-width: 250px;
+      width: 100%;
+      margin: 0; }
+
+/* line 198, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.firstview {
+  background-image: url(../images/fv/fvbg.png);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  padding-top: 15%;
+  padding-left: 15%;
+  margin-bottom: 200px;
+  height: 100vh;
+  position: relative;
+  transition: all; }
+  /* line 211, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .firstview #scroll--border {
+    position: absolute;
+    bottom: -55px;
+    height: 155px;
+    overflow: hidden;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    line-height: 30px;
+    -webkit-animation: fadeIn 3.5s ease 0s 1 normal;
+    animation: fadeIn 3.5s ease 0s 1 normal; }
+  /* line 223, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .firstview #scroll--border:after {
+    content: "";
+    display: block;
+    width: 1px;
+    border-left: 1px #333 solid;
+    animation: scroll 2s ease 0s infinite normal;
+    margin: 0 auto 0; }
+
+@keyframes scroll {
+  0% {
+    height: 0; }
+  50% {
+    height: 150px;
+    margin-top: 0; }
+  100% {
+    margin-top: 150px;
+    height: 150px; } }
+
+@keyframes scrollsp {
+  0% {
+    height: 0; }
+  50% {
+    height: 200px;
+    margin-top: 0; }
+  100% {
+    margin-top: 200px;
+    height: 200px; } }
+  /* line 264, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .firstview .fvlogo {
+    -webkit-animation: fadeIn 3.5s ease 0s 1 normal;
+    animation: fadeIn 3.5s ease 0s 1 normal; }
+    /* line 268, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .firstview .fvlogo img {
+      max-width: 530px;
+      width: 100%; }
+
+/* line 275, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.newssp {
+  display: none; }
+
+/* line 279, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.newspc {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #1a47b8;
+  width: 50vw;
+  height: 192px;
+  padding-top: 40px;
+  padding-left: 50px;
+  -webkit-animation: fadeIn 3.5s ease 0s 1 normal;
+  animation: fadeIn 3.5s ease 0s 1 normal; }
+  /* line 292, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .newspc .newshead {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 0.075em;
+    margin-bottom: 10px; }
+  /* line 299, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .newspc .news--content {
+    color: #fff;
+    padding-left: 2px; }
+    /* line 303, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .newspc .news--content .slider {
+      font-size: 14px;
+      line-height: 2.0; }
+      /* line 307, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .newspc .news--content .slider time {
+        margin-bottom: 10px; }
+
+/* line 314, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.slick-dots {
+  width: auto !important;
+  left: 0 !important; }
+  /* line 319, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .slick-dots li button:before {
+    color: #ffffff !important; }
+  /* line 325, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .slick-dots li.slick-active button:before {
+    color: #ffffff !important; }
+  /* line 330, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .slick-dots li:nth-child(1) {
+    margin-left: -6px; }
+
+/* line 335, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.section--title__box {
+  margin-bottom: 50px;
+  text-align: left; }
+
+/* line 341, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.section--subtitle {
+  position: relative;
+  display: inline-block;
+  padding: 0 43px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  margin-top: 30px;
+  margin-bottom: 15px; }
+
+/* line 352, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.section--subtitle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  left: 0px;
+  background-color: #666; }
+
+/* line 363, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.section--title {
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 0.15em; }
+
+/* line 369, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.section--button {
+  width: 204px;
+  border-radius: 26px;
+  text-align: center;
+  background-color: #1a47b8;
+  color: #ffffff;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+  display: block;
+  position: relative;
+  z-index: 8000;
+  cursor: pointer; }
+  /* line 382, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .section--button a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 55px; }
+    /* line 390, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .section--button a:hover {
+      opacity: 0.6; }
+    /* line 394, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .section--button a p {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      /* line 399, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .section--button a p img {
+        max-width: 100%;
+        height: auto;
+        margin-left: 10px;
+        margin-top: -5px; }
+
+/* line 410, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.effect-fade {
+  opacity: 0;
+  transform: translate(0, 45px);
+  transition: all 300ms; }
+
+/* line 416, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.effect-fade.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0); }
+
+/* line 429, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper {
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 20px 0 20px;
+  /*---------------brand---------------*/
+  /*---------------------------------------------*/
+  /*---------------------------------------------*/
+  /*---------------モーダルウィンドウ---------------*/
+  /*---------------------------------------------*/
+  /*---------------------------------------------*/
+  /*---------------------------------------------*/
+  /*---------------------------------------------*/
+  /*---------------モーダルウィンドウ---------------*/
+  /*---------------------------------------------*/
+  /*---------------------------------------------*/ }
+  /* line 440, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .company {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100vw;
+    margin-bottom: 200px; }
+  /* line 447, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .company--box {
+    display: flex; }
+  /* line 452, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .company--box__text {
+    max-width: 410px; }
+  /* line 456, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .company--text {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 2.28;
+    margin-right: 45px;
+    margin-bottom: 50px; }
+  /* line 467, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .company--img__inbox {
+    position: relative;
+    width: 100%;
+    height: 488px;
+    overflow: hidden; }
+    /* line 473, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .company--img__inbox a {
+      text-decoration: none;
+      color: #333; }
+    /* line 478, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .company--img__inbox p {
+      text-decoration: none;
+      color: #333; }
+    /* line 483, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .company--img__inbox .company--box__img {
+      width: 100%;
+      height: 488px;
+      background: url("../images/company/company.png") no-repeat center center;
+      background-size: cover;
+      background-position: center;
+      margin-right: 20px;
+      position: absolute;
+      transition: all 0.5s ease-out;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      will-change: transform;
+      overflow: hidden; }
+    /* line 502, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .company--img__inbox p {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      font-size: 15px;
+      letter-spacing: 0.15em;
+      border: solid 1px #000000;
+      padding: 15px 20px;
+      pointer-events: none;
+      z-index: 9800; }
+  /* line 523, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .company--box__img:hover {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.95); }
+  /* line 530, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .servicesp {
+    display: none; }
+  /* line 534, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .servicepc {
+    background: linear-gradient(90deg, #f4f4f4 0%, #f4f4f4 70%, #333333 70%, #333333 100%);
+    margin: 0 calc(50% - 50vw);
+    padding: 0 calc(50vw - 50%);
+    width: 100vw;
+    height: 500px;
+    margin-bottom: 200px; }
+    /* line 544, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .servicepc .service--box {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0; }
+    /* line 553, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .servicepc .service--inbox {
+      max-width: 366px;
+      margin-right: 51px;
+      height: 100%; }
+    /* line 559, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .servicepc .service--inbox__img {
+      margin-top: 85px;
+      text-align: center; }
+      /* line 565, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .servicepc .service--inbox__img img {
+        margin: auto; }
+    /* line 572, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .servicepc .service--inbox__title {
+      font-size: 20px;
+      margin-top: 50px;
+      padding-bottom: 20px;
+      border-bottom: solid 1px #333333;
+      letter-spacing: 0.075em; }
+    /* line 582, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .servicepc .service--inbox__text {
+      margin-top: 20px; }
+      /* line 585, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .servicepc .service--inbox__text p {
+        font-size: 14px;
+        line-height: 2.28; }
+    /* line 591, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .servicepc .service--inbox__white {
+      height: 100%;
+      background-color: #333333;
+      padding-left: 100px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.15em; }
+    /* line 600, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .servicepc .section--subtitle__white {
+      position: relative;
+      display: inline-block;
+      padding: 0 43px;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.075em;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #ffffff; }
+    /* line 613, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .servicepc .section--subtitle__white::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      width: 25px;
+      height: 1px;
+      left: 0px;
+      background-color: #ffffff; }
+    /* line 624, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .servicepc .section--title__white {
+      font-size: 50px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      color: #ffffff; }
+  /* line 633, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 -13px; }
+    /* line 639, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .container .modal--link {
+      padding: 0 13px; }
+      /* line 642, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .container .modal--link img {
+        max-width: 100%;
+        height: auto; }
+    /* line 648, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .container .modal--link:hover {
+      opacity: 0.6; }
+  /* line 653, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .brand {
+    margin-bottom: 200px;
+    position: relative; }
+  /* line 658, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .brand_box {
+    width: 280px; }
+  /* line 664, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .b_link:hover {
+    opacity: 0.6; }
+  /* line 673, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .modal-wrapper {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 75px 10px;
+    text-align: center; }
+  /* line 684, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .modal-wrapper:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s; }
+  /* line 690, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .modal-wrapper:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .4s, visibility .4s; }
+  /* line 696, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .modal-wrapper::after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -0.5em;
+    vertical-align: middle;
+    content: ""; }
+  /* line 704, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .modal-wrapper .modal-window {
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+    width: 800px;
+    height: 600px;
+    padding: 145px 100px 300px;
+    background: #fff;
+    border-radius: 0px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    vertical-align: middle; }
+  /* line 718, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .modal-wrapper .modal-window .modal-content {
+    max-height: 80vh;
+    font-size: 12px;
+    overflow-y: auto;
+    text-align: left;
+    line-height: 1.75;
+    letter-spacing: 0.1em; }
+  /* line 727, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .modal-wrapper .modal-window .modal-content img {
+    margin: auto; }
+  /* line 731, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .modal-wrapper a:hover {
+    opacity: 1; }
+  /* line 735, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .modal-overlay {
+    z-index: 10;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8); }
+  /* line 746, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .modal-wrapper .modal-close {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    color: #95979c !important;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0; }
+  /* line 760, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper img.p75 {
+    padding-bottom: 75px; }
+  /* line 764, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper img.p36 {
+    padding-bottom: 36px; }
+  /* line 768, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper img.p40 {
+    padding-bottom: 40px; }
+  /* line 772, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper img.p10 {
+    padding-bottom: 10px; }
+  /* line 776, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .modal-wrapper .modal-close:hover {
+    color: #2b2e38 !important; }
+
+/* line 788, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.productsp {
+  display: none; }
+
+/* line 792, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.productpc {
+  margin-bottom: 347px;
+  width: 100vw;
+  position: relative;
+  display: block; }
+  /* line 798, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc .product--box {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    height: 615px; }
+  /* line 805, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc .product--box__image__inbox {
+    position: relative;
+    max-width: 990px;
+    height: 100%;
+    overflow: hidden; }
+  /* line 812, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc .product--box__image {
+    background: url(../images/product/product.png) no-repeat center center;
+    background-size: cover;
+    width: 990px;
+    height: 100%;
+    margin-right: 20px;
+    position: absolute;
+    transition: all 0.5s ease-out;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    will-change: transform; }
+  /* line 827, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc .product--box__image:hover {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.95); }
+  /* line 834, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc img {
+    max-width: 100%; }
+  /* line 838, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc .product--box__content {
+    position: absolute;
+    max-width: 400px;
+    right: 0px;
+    top: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0 0 20px 80px; }
+  /* line 854, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc .product--box__text p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 2.28;
+    margin-right: 45px;
+    margin-bottom: 50px; }
+  /* line 870, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc .product--bottom__banner {
+    width: 58vw;
+    position: absolute;
+    align-items: center;
+    right: 0px;
+    bottom: -146px;
+    background-color: #333; }
+    /* line 878, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .productpc .product--bottom__banner .product--bottom__banner {
+      content: "";
+      display: block;
+      padding-top: 100%; }
+    /* line 887, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .productpc .product--bottom__banner .bottom__banner--inbox {
+      padding: 35px 0px 35px 70px;
+      margin-right: 100px;
+      display: flex;
+      justify-content: flex-start;
+      max-width: 710px; }
+  /* line 896, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc .product--circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: 100%; }
+  /* line 907, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc .product--circle:nth-child(1) {
+    margin-left: 0; }
+  /* line 911, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc .product--circle__num {
+    font-size: 30px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 7px;
+    margin-bottom: 13px; }
+  /* line 918, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc .product--circle__text {
+    font-size: 14px; }
+
+/* line 925, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .shop {
+  background-color: #f4f4f4;
+  margin: 0 calc(50% - 50vw);
+  padding: 0 calc(50vw - 50%);
+  padding-top: 100px;
+  padding-bottom: 125px;
+  margin-bottom: 200px; }
+
+/* line 935, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .shop--box .shop--subtitle {
+  margin-bottom: 50px;
+  font-size: 14px; }
+
+/* line 941, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .shop--button__box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: space-around;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+  margin: 0 -12px; }
+
+/* line 952, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .shop--button {
+  padding: 0 12px;
+  max-width: 16%;
+  padding-bottom: 24px; }
+  /* line 965, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .shop--button p {
+    padding-top: 55px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.075em;
+    line-height: 1.71; }
+
+/* line 975, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .shop--button:hover {
+  opacity: 0.6; }
+
+/* line 981, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .contact {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 200px; }
+  /* line 986, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .contact .contact--title__container {
+    display: flex;
+    justify-content: center; }
+  /* line 997, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .contact .contact--text {
+    margin-bottom: 30px;
+    font-size: 14px; }
+  /* line 1002, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .contact p {
+    font-size: 14px;
+    line-height: 2.08; }
+
+/* line 1008, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .contact--button {
+  margin: auto;
+  max-width: 790px;
+  background-color: #1a47b8;
+  border-radius: 50px; }
+  /* line 1014, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .contact--button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    text-decoration: none;
+    color: #ffffff; }
+
+/* line 1024, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .contact--button:hover {
+  opacity: 0.6; }
+
+/* line 1028, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .recruit {
+  margin: auto;
+  max-width: 790px;
+  margin-bottom: 200px; }
+
+/* line 1040, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .recruit:hover {
+  opacity: 0.6; }
+
+/* line 1045, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper footer {
+  margin: 0 calc(50% - 50vw);
+  padding: 0 40px;
+  background-color: #333;
+  height: 260px;
+  position: relative; }
+
+/* line 1053, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .footer--box {
+  padding-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+/* line 1061, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .footer--box__logo img {
+  max-width: 250px; }
+
+/* line 1068, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0 -20px;
+  padding-left: 0; }
+
+/* line 1075, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper li {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-right: solid 1px #ffffff; }
+  /* line 1083, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper li a {
+    text-decoration: none;
+    color: #fff; }
+  /* line 1088, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper li p {
+    display: inline; }
+
+/* line 1093, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper li:hover {
+  opacity: 0.6; }
+
+/* line 1097, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper li:nth-child(7) {
+  border-right: none; }
+
+/* line 1101, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+.wrapper .copyright {
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  margin-bottom: 25px; }
+  /* line 1110, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .copyright p {
+    text-align: center; }
+
+/*-----------------------------ここから1023以下-----------------------------*/
+@media screen and (max-width: 1023px) {
+  /* line 1121, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .start p {
+    text-align: center; }
+    /* line 1124, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .start p img {
+      width: 90%;
+      margin: auto; }
+  /* line 1131, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .section--title__box {
+    margin-bottom: 30px; }
+  /* line 1135, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .section--subtitle {
+    padding: 0 23px;
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 5px; }
+  /* line 1142, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .section--subtitle::before {
+    width: 13px; }
+  /* line 1147, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .section--title {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.15em; }
+  /* line 1153, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .section--button {
+    width: 100%;
+    padding: 20px 0; }
+    /* line 1158, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .section--button p img {
+      max-width: 100%;
+      height: auto;
+      margin-left: 10px;
+      margin-top: -5px; }
+    /* line 1165, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .section--button p a {
+      color: #ffffff; }
+  /* line 1171, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .newspc {
+    display: none; }
+  /* line 1177, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .firstview {
+    background-image: url(../images/sp/fv/fvbg_sp.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin-bottom: 100px; }
+    /* line 1188, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .firstview .fvlogo img {
+      width: 60%;
+      margin: auto; }
+    /* line 1194, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .firstview #scroll--border {
+      bottom: -40px;
+      height: 200px; }
+    /* line 1199, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .firstview #scroll--border:after {
+      content: "";
+      display: block;
+      width: 1px;
+      border-left: 1px #333 solid;
+      animation: scrollsp 2s ease 0s infinite normal;
+      margin: 0 auto 0; }
+  /* line 1209, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .clicked .menu {
+    padding-top: 55px; }
+  /* line 1213, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .menu ul {
+    width: 90%; }
+  /* line 1217, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .menu ul li {
+    height: 60px; }
+  /* line 1222, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .menu ul li a {
+    line-height: 60px;
+    font-size: 12px; }
+  /* line 1227, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .newssp {
+    display: block;
+    background-color: #1a47b8;
+    font-size: 11px;
+    height: 120px;
+    padding-top: 0;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 100px; }
+    /* line 1237, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .newssp .newshead {
+      font-size: 15px;
+      padding-top: 23px;
+      color: #fff;
+      letter-spacing: 0.075em;
+      margin-bottom: 10px; }
+    /* line 1247, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .newssp .news--content .slider {
+      font-size: 11px;
+      color: #fff; }
+      /* line 1251, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .newssp .news--content .slider p {
+        line-height: 2.0; }
+  /* line 1262, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  header .header--wrapper h1 img {
+    max-width: 150px; }
+  /* line 1269, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 20px 0 20px;
+    /*---------------brand---------------*/
+    /*---------------------------------------------*/
+    /*---------------------------------------------*/
+    /*---------------モーダルウィンドウ---------------*/
+    /*---------------------------------------------*/
+    /*---------------------------------------------*/
+    /*---------------------------------------------*/
+    /*---------------------------------------------*/
+    /*---------------モーダルウィンドウ---------------*/
+    /*---------------------------------------------*/
+    /*---------------------------------------------*/ }
+    /* line 1278, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .company {
+      width: auto;
+      margin-bottom: 100px; }
+      /* line 1282, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .company .company--box {
+        flex-flow: column; }
+      /* line 1286, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .company .company--box__text {
+        max-width: none;
+        order: 2; }
+      /* line 1291, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .company .company--text {
+        font-size: 12px;
+        margin-right: 0;
+        margin-bottom: 30px; }
+      /* line 1297, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .company .company--img__inbox {
+        height: 200px;
+        order: 1; }
+        /* line 1301, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+        .wrapper .company .company--img__inbox .company--box__img {
+          height: 200px;
+          background-size: 100%; }
+      /* line 1307, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .company p {
+        width: auto;
+        font-size: 12px;
+        text-align: left; }
+    /* line 1314, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .servicepc {
+      display: none; }
+    /* line 1318, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .servicesp {
+      display: block;
+      margin-bottom: 70px; }
+      /* line 1323, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .servicesp .service--box {
+        display: flex;
+        margin: 0 calc(50% - 50vw);
+        padding: 100px 20px 100px 20px;
+        background-color: #f4f4f4; }
+        /* line 1330, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+        .wrapper .servicesp .service--box .service--inbox:nth-child(1) {
+          margin-right: 10px; }
+        /* line 1334, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+        .wrapper .servicesp .service--box .service--inbox:nth-child(2) {
+          margin-left: 10px; }
+      /* line 1345, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .servicesp .service--inbox__img img {
+        margin: auto; }
+      /* line 1352, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .servicesp .service--inbox__title {
+        font-size: 20px;
+        margin-top: 30px;
+        padding-bottom: 15px;
+        border-bottom: solid 1px #333333; }
+        /* line 1360, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+        .wrapper .servicesp .service--inbox__title p {
+          font-size: 15px;
+          font-weight: 500;
+          text-align: center; }
+      /* line 1367, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .servicesp .service--inbox__text {
+        margin-top: 20px; }
+        /* line 1370, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+        .wrapper .servicesp .service--inbox__text p {
+          font-size: 12px;
+          line-height: 2.08; }
+      /* line 1376, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .servicesp .service--inbox__white {
+        margin: 0 calc(50% - 50vw);
+        background-color: #333333;
+        text-align: right;
+        padding: 40px 20px 40px 0; }
+        /* line 1382, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+        .wrapper .servicesp .service--inbox__white .inbox--white__title {
+          margin: auto; }
+      /* line 1387, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .servicesp .section--subtitle__white {
+        position: relative;
+        display: inline-block;
+        padding: 0 35px;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.075em;
+        margin-bottom: 10px;
+        color: #ffffff; }
+      /* line 1399, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .servicesp .section--subtitle__white::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        width: 25px;
+        height: 1px;
+        left: 0px;
+        background-color: #ffffff; }
+      /* line 1410, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .servicesp .section--title__white {
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        color: #ffffff; }
+    /* line 1420, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .container {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 -7px; }
+      /* line 1425, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper .container .modal--link {
+        padding: 0 7px;
+        margin-bottom: 14px;
+        max-width: 25%; }
+        /* line 1430, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+        .wrapper .container .modal--link img {
+          width: 100%; }
+    /* line 1437, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .brand {
+      margin-bottom: 70px; }
+    /* line 1441, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .brand_box {
+      width: 280px; }
+    /* line 1447, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .b_link:hover {
+      opacity: 0.6; }
+    /* line 1456, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .modal-wrapper .modal-window {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      height: 70vh;
+      padding: 10%; }
+    /* line 1465, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .modal-wrapper .modal-window .modal-content img {
+      width: 70%; }
+    /* line 1469, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper img.p75 {
+      padding-bottom: 30px; }
+    /* line 1473, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper img.p36 {
+      padding-bottom: 18px; }
+    /* line 1477, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper img.p40 {
+      padding-bottom: 20px; }
+    /* line 1481, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper img.p10 {
+      padding-bottom: 5px; }
+  /* line 1493, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productpc {
+    display: none; }
+  /* line 1497, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .productsp {
+    display: block;
+    margin-bottom: 100px; }
+    /* line 1501, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .productsp .product--title__box {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 20px; }
+      /* line 1506, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .productsp .product--title__box .section--title__box {
+        text-align: left; }
+    /* line 1513, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .productsp .product--img__box__sub {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: #333333;
+      margin-bottom: 30px; }
+      /* line 1520, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .productsp .product--img__box__sub img {
+        width: 50%;
+        height: auto;
+        align-self: flex-start;
+        min-width: 0;
+        padding: 2% 2%; }
+    /* line 1533, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .productsp .product--box__text {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      line-height: 2.08;
+      margin-bottom: 30px;
+      padding: 0 20px; }
+    /* line 1545, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .productsp .section--button__box {
+      padding: 0 20px; }
+  /* line 1570, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .shop {
+    margin-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  /* line 1577, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .shop--box .shop--subtitle {
+    margin-bottom: 30px;
+    font-size: 12px; }
+  /* line 1583, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .shop--button {
+    max-width: 16%; }
+  /* line 1591, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .shop--button:hover {
+    opacity: 0.6; }
+  /* line 1595, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .contact {
+    margin-bottom: 100px; }
+    /* line 1599, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .contact .contact--button a {
+      font-size: 12px;
+      line-height: 60px; }
+    /* line 1605, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper .contact .contact--button:hover {
+      opacity: 0.6; }
+  /* line 1610, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .recruit {
+    margin-bottom: 100px; }
+  /* line 1614, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper footer {
+    height: 100px; }
+    /* line 1617, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper footer .footer--box {
+      padding-top: 37px; }
+      /* line 1620, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper footer .footer--box .footer--box__logo {
+        margin: auto; }
+        /* line 1623, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+        .wrapper footer .footer--box .footer--box__logo img {
+          max-width: 150px; }
+    /* line 1629, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper footer .footer--box__nav {
+      display: none; }
+    /* line 1633, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+    .wrapper footer .copyright {
+      right: 0;
+      left: 0;
+      margin: auto;
+      margin-bottom: 20px; }
+      /* line 1639, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+      .wrapper footer .copyright p {
+        font-size: 8px; } }
+
+@media screen and (max-width: 600px) {
+  /* line 1650, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .container .modal--link {
+    max-width: 50%; }
+  /* line 1655, /Users/allmarket-design2/Desktop/コーポレートサイト2020/top/top/css/css.scss */
+  .wrapper .shop--button {
+    max-width: 33.3%; } }
+
+/*# sourceMappingURL=css.css.map */
